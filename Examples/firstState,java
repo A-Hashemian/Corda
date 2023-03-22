@@ -38,3 +38,11 @@ public class ExampleState implements ContractState {
     }
     
     }
+    
+    /*
+    In this code, I created a state class named ExampleState. 
+    It contains two properties named data and participant. 
+    The data property is of type String and contains the data to be moved in the state object, 
+    while the participant property is of type Party and represents one of the parties owning the state object. 
+    Also, the ExampleState class implements the ContractState interface and implements the getParticipants() method, returning the sides this state has.
+    */
