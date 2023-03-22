@@ -23,4 +23,8 @@ public class ExampleState implements ContractState {
         this.participant = participant;
     }
     
+     public String getData() {
+        return data;
+    }
+    
     }
