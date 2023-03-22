@@ -27,4 +27,9 @@ public class ExampleState implements ContractState {
         return data;
     }
     
+     public Party getParticipant() {
+        return participant;
+    }
+    
+    
     }
