@@ -11,3 +11,11 @@ import net.corda.core.serialization.CordaSerializable;
 /**
  * A simple state object example
  */
+
+@CordaSerializable
+@BelongsToContract(ExampleContract.class)
+public class ExampleState implements ContractState {
+    private final String data;
+    private final Party participant;
+    
+    }
