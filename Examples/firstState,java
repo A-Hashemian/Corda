@@ -6,3 +6,8 @@ import net.corda.core.contracts.ContractState;
 import net.corda.core.identity.AbstractParty;
 import net.corda.core.identity.Party;
 import net.corda.core.serialization.CordaSerializable;
+
+
+/**
+ * A simple state object example
+ */
