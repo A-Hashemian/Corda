@@ -49,4 +49,23 @@ public class UserController {
 }
 
 
+public class Main {
+    public static void main(String[] args) {
+        // Create an instance of our Model class
+        UserModel model = new UserModel();
+        
+        // Create an instance of our View class
+        UserView view = new UserView();
+        
+        // Create an instance of our Controller class and pass in the Model and View classes as parameters
+        UserController controller = new UserController(model, view);
+        
+        // Set the user's name and age
+        controller.setUserDetails("John Doe", 30);
+        
+        // Update the view to display the results
+        controller.updateUserView();
+    }
+}
+
 
