@@ -19,3 +19,12 @@ public class UserModel {
         this.age = age;
     }
 }
+
+
+public class UserView {
+    public void printUserDetails(String name, int age) {
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+    }
+}
+
