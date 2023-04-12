@@ -28,3 +28,25 @@ public class UserView {
     }
 }
 
+
+public class UserController {
+    private UserModel model;
+    private UserView view;
+    
+    public UserController(UserModel model, UserView view) {
+        this.model = model;
+        this.view = view;
+    }
+    
+    public void setUserDetails(String name, int age) {
+        model.setName(name);
+        model.setAge(age);
+    }
+    
+    public void updateUserView() {
+        view.printUserDetails(model.getName(), model.getAge());
+    }
+}
+
+
+
