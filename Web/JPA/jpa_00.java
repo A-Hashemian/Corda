@@ -20,6 +20,18 @@ public class Main {
         MyTable myTable = new MyTable();
         myTable.setColumn1("value1");
         myTable.setColumn2("value2");
+        
+        
+         // Save the entity to the database using the persist() method
+        entityManager.persist(myTable);
+        
+        // Commit the transaction to save the changes to the database
+        entityTransaction.commit();
+        
+        // Close the EntityManager and EntityManagerFactory
+        entityManager.close();
+        entityManagerFactory.close();
+    }
       
       
     }
