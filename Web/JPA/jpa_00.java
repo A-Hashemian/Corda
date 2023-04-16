@@ -15,6 +15,11 @@ public class Main {
         // Begin a new transaction using the EntityTransaction object
         EntityTransaction entityTransaction = entityManager.getTransaction();
         entityTransaction.begin();
+        
+        // Create a new instance of the MyTable entity and set its values
+        MyTable myTable = new MyTable();
+        myTable.setColumn1("value1");
+        myTable.setColumn2("value2");
       
       
     }
