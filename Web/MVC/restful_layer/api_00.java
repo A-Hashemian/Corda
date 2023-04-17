@@ -28,4 +28,14 @@ public class UserResource {
     }
     
     
+        // POST method to create a new user
+    @POST
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response createUser(User user) {
+        String userId = UUID.randomUUID().toString(); // Generate a random UUID for user ID
+        user.setId(userId);
+        users.put(userId, user); // Add user to the collection
+        return Response.ok(userId).build(); // Return HTTP 200 OK with user ID
+    }
+    
 }
