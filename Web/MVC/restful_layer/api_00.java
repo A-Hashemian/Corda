@@ -10,5 +10,7 @@ import javax.ws.rs.core.Response;
 @Path("/users")
 public class UserResource {
 
+    
+     // In-memory collection to store users
     private static Map<String, User> users = new HashMap<>();
 }
