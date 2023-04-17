@@ -54,4 +54,19 @@ public class UserResource {
         }
     }
     
+    
+     // DELETE method to delete a user by ID
+    @DELETE
+    @Path("/{userId}")
+    public Response deleteUser(@PathParam("userId") String userId) {
+        User user = users.get(userId);
+        if (user != null) {
+            users.remove(userId); // Remove user from the collection
+            return Response.ok().build(); // Return HTTP 200 OK
+        } else {
+            return Response.status(Response.Status.NOT_FOUND).build(); // Return HTTP 404 Not Found if user doesn't exist
+        }
+    }
+    
+    
 }
