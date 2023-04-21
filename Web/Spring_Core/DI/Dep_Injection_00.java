@@ -13,6 +13,11 @@ you can define this class as follows:
 
 public class UserService {
   private UserDAO userRepository;
+  
+   // Constructor injection
+  public UserService(UserDAO userRepository) {
+    this.userRepository = userRepository;
+  }
 
   
 }
