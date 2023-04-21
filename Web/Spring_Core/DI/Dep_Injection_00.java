@@ -10,3 +10,9 @@ you can define this bean in our Spring configuration file (lets call it "applica
 Next  define the class that will use the "UserRepository" bean lets say you have a "UserService" class that depends on the "UserRepository" bean
 you can define this class as follows:
 */
+
+public class UserService {
+  private UserDAO userRepository;
+
+  
+}
