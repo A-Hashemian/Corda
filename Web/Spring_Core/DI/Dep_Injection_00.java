@@ -40,4 +40,8 @@ public class UserService {
     userRepository.updateUser(id, updatedUser);
   }
   
+   public void deleteUser(int id) {
+    userRepository.deleteUser(id);
+  }
+  
 }
