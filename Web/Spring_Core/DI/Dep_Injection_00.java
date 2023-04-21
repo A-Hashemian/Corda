@@ -18,6 +18,11 @@ public class UserService {
   public UserService(UserDAO userRepository) {
     this.userRepository = userRepository;
   }
+  
+    // Setter injection (optional)
+  public void setUserRepository(UserDAO userRepository) {
+    this.userRepository = userRepository;
+  }
 
   
 }
