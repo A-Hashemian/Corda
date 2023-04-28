@@ -11,3 +11,17 @@ Java.
 • Vaadin comes with a large library of customizable UI components.
 • Vaadin handles the communication between the server and the browser
 automatically, you don’t need to write any JavaScript to update content dynamically
+
+Why use Vaadin instead of REST and React or Angular?
+Combining a Spring Boot based REST backend with a frontend framework like React or
+Angular is a popular way of building SPAs. Vaadin allows you to build similar app
+experiences with less effort.
+Advantages of using Vaadin:
+• Faster development: you do not need to develop the backend and frontend
+separately.
+• The entire application can be written in typesafe Java.
+• Vaadin comes with a large library of customizable UI components.
+• Vaadin handles the communication between the server and the browser
+automatically, you don’t need to write any JavaScript to update content dynamically.
+• More secure: the Vaadin app runs on the server and doesn’t expose application code
+or extra endpoints to the browser
