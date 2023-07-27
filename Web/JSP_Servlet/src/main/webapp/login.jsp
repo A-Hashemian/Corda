@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<%@include file="/includes/head.jsp"%>
+<%@include file="/includes/header.jsp"%>
 <title>E-Commerce Cart</title>
 </head>
 <body>
