@@ -4,7 +4,7 @@
 <html lang="en">
   <head>
   
-  <%@include file="includes/head.jsp"%>
+  <%@include file="includes/header.jsp"%>
     
    
     <title>Bootstrap demo</title>
