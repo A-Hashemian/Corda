@@ -7,6 +7,10 @@
 <title>cart page </title>
 </head>
 <body>
+<%@include file="/includes/navbar.jsp"%>
 
+
+
+<%@include file="includes/footer.jsp"%>
 </body>
 </html>
