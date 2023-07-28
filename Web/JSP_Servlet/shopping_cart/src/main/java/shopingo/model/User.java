@@ -1,4 +1,4 @@
-package shopingo;
+package shopingo.model;
 
 public class User {
 	private int id;
