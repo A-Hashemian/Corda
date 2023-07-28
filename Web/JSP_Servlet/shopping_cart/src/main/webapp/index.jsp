@@ -13,6 +13,7 @@
   <body>
     <%@include file="/includes/navbar.jsp"%>
     
+    <% out.print(DBConn.getConnection()); %>
     
      <%@include file="includes/footer.jsp"%>
   </body>
