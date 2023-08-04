@@ -1,5 +1,20 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    
+    <%@page import="shopingo.model.*"%>
+    
+     <%
+User auth = (User) request.getSession().getAttribute("auth");
+if (auth != null) {
+    request.setAttribute("person", auth);
+}
+ProductDao pd = new ProductDao(DbCon.getConnection());
+List<Product> products = pd.getAllProducts();
+ArrayList<Cart> cart_list = (ArrayList<Cart>) session.getAttribute("cart-list");
+if (cart_list != null) {
+	request.setAttribute("cart_list", cart_list);
+}
+%>
 <!DOCTYPE html>
 <html>
 <head>
